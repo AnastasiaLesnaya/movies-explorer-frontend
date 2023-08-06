@@ -1,0 +1,115 @@
+.card {
+  font-family: "Inter", "Arial", sans-serif;
+  font-style: normal;
+  width: 300px;
+  background: #222222;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.08);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.card__snapshot {
+  height: 168px;
+  border-radius: 6px 6px 0 0;
+  color: #8b8b8b;
+}
+
+.card__name {
+  margin: 14px 14px 0 14px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  color: #ffffff;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+  overflow-y: hidden;
+}
+
+.card__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card__btn {
+  width: 30px;
+  height: 30px;
+  margin: 7px 10px 0 0;
+  background-color: transparent;
+  border: none;
+  background-image: url("../../images/btn-like.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.card__btn_like:hover {
+  cursor: pointer;
+}
+
+.card__btn_active {
+  background-image: url("../../images/btn-like_active.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.card__btn_remove {
+  background-image: url("../../images/btn-remove.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.card__btn_remove:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transform: rotate(90deg);
+  transition: all 0.5s ease-in-out;
+}
+
+.card__duration {
+  margin: 14px 0 14px 14px;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  color: #8b8b8b;
+}
+
+@media (min-width: 520px) {
+  .card {
+    width: 339px;
+  }
+
+  .card__snapshot {
+    height: 190px;
+  }
+
+  .card__name {
+    font-size: 13px;
+    line-height: 14px;
+  }
+
+  .card__duration {
+    font-size: 11px;
+    line-height: 13px;
+  }
+
+  .card__btn_remove {
+    visibility: hidden;
+  }
+
+  .card:hover .card__btn_remove {
+    visibility: visible;
+  }
+
+}
+
+@media (min-width: 980px) {
+  .card {
+    width: 364px;
+  }
+
+  .card__snapshot {
+    height: 203px;
+  }
+}

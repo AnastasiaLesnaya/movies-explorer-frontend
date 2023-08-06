@@ -1,0 +1,49 @@
+.login {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-style: normal;
+}
+
+.login__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 253px;
+  gap: 50px;
+  font-family: "Inter", "Arial", sans-serif;
+}
+
+.login__text {
+  margin: 0 auto;
+  color: #ffffff;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+}
+
+@media (min-width: 520px) {
+  .login {
+    margin: 0 auto;
+    margin-top: 232px;
+    width: 396px;
+  }
+
+  .login__header {
+    margin-bottom: 40px;
+    height: auto;
+    align-items: start;
+    justify-content: start;
+  }
+
+  .login__text {
+    margin: 0;
+  }
+}
+
+@media (min-width: 980px) {
+  .login {
+    margin-top: 70px;
+  }
+}

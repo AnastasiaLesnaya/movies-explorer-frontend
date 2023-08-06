@@ -1,0 +1,123 @@
+.technologies {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0 14px;
+}
+
+.technologies__title {
+  margin: 70px 0 0;
+  padding-bottom: 28px;
+  border-bottom: 1px solid black;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.04em;
+  width: 100%;
+}
+
+.technologies__subtitle {
+  margin: 60px 0 0;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 36px;
+  text-align: center;
+  letter-spacing: -0.04em;
+}
+
+.technologies__description {
+  margin: 24px 0 0;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: -0.04em;
+}
+
+.technologies__list {
+  align-self: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 50px auto 70px;
+  width: 178px;
+  padding: 0;
+}
+
+.technologies__item {
+  width: 84px;
+  height: 57px;
+  background-color: #303030;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.technologies__content {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: center;
+  letter-spacing: -0.04em;
+}
+
+@media (min-width: 520px) {
+  .technologies {
+    background-color: #272727;
+  }
+
+  .technologies__title {
+    margin-top: 90px;
+    padding-bottom: 23px;
+    font-size: 22px;
+    line-height: 27px;
+    border-bottom: 1px solid #dadada;
+    max-width: 668px;
+  }
+
+  .technologies__subtitle {
+    margin-top: 80px;
+    font-size: 50px;
+    line-height: 58px;
+  }
+
+  .technologies__description {
+    margin-top: 22px;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .technologies__list {
+    margin: 83px auto 90px;
+    width: auto;
+  }
+}
+
+@media (min-width: 980px) {
+  .technologies__title {
+    max-width: 1140px;
+    margin-top: 100px;
+  }
+
+  .technologies__subtitle {
+    margin-top: 90px;
+  }
+
+  .technologies__description {
+    margin: 26px;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .technologies__list {
+    margin: 100px auto;
+  }
+
+  .technologies__content {
+    font-size: 14px;
+    line-height: 17px;
+  }
+}
