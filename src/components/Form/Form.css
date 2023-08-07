@@ -1,0 +1,85 @@
+.form {
+  margin: 0 30px 0 30px;
+  font-family: "Inter", "Arial", sans-serif;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.form__container {
+  margin-top: auto;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__button {
+  background: #4285f4;
+  color: #ffffff;
+  font-family: "Inter", "Arial", sans-serif;
+  width: 100%;
+  height: 45px;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  border: none;
+}
+
+.form__button:hover {
+  cursor: pointer;
+  scale: 1.01;
+  transition: 0.3s all ease-in-out;
+}
+
+.form__label {
+  color: #8b8b8b;
+  margin-top: 14px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.form__link {
+  margin-left: 7px;
+  color: #4285f4;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+}
+
+.form__link:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: 0.3s all ease-in-out;
+}
+
+@media (min-width: 520px) {
+  .form {
+    margin: 0 auto;
+    width: 396px;
+    flex: 0.5;
+  }
+
+  .form__container {
+    margin-bottom: 0;
+  }
+
+  .form__button {
+    margin-top: 69px;
+  }
+}
+
+@media (min-width: 980px) {
+  .form {
+    flex: 0.75;
+  }
+
+  .form__button {
+    margin-top: 0;
+  }
+}
